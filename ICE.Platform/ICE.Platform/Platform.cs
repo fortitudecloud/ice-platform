@@ -49,5 +49,26 @@ namespace ICE.Platform
                 }
             }
         }
+
+        public static IEnumerable<Type> GetMutationList<E>(MutationType mutationType, MutationOperation mutationOperation) where E : IPlatformEntity
+        {
+            foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies())
+            {
+                foreach (Type type in assembly.GetTypes())
+                {
+                    if (type.IsAbstract) continue;
+
+                    if (type.GetCustomAttributes(typeof(MutationAttribute), true).Length > 0)
+                    {
+                        var meta = (MutationAttribute)type.GetCustomAttributes(typeof(MutationAttribute), true)[0];
+
+                        if(meta.Type == mutationType && meta.Operation == mutationOperation && meta.Entity == typeof(E))
+                        {
+                            yield return type;
+                        }                        
+                    }
+                }
+            }
+        }
     }
 }
