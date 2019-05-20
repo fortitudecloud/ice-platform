@@ -5,7 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Events\" />
+    <Folder Include="Triggers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ICE.Platform.Core\ICE.Platform.Core\ICE.Platform.Core.csproj" />
   </ItemGroup>
 
 </Project>

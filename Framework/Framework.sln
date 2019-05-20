@@ -1,0 +1,228 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{834637A8-FD1A-4613-9A6D-564FAFA10660}"
+	ProjectSection(SolutionItems) = preProject
+		Framework.vsmdi = Framework.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica.Au.Mpire.Framework", "Logica.Au.Mpire.Framework\Logica.Au.Mpire.Framework.csproj", "{45A95A4A-5FA1-41B0-814C-B964E7EED65D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica.Au.Mpire.Framework.Configuration", "Logica.Au.Mpire.Framework.Configuration\Logica.Au.Mpire.Framework.Configuration.csproj", "{0A7DBD1F-E35A-4DBE-A028-3F796951EFFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica.Au.Mpire.FrameWork.Definitions.SysLists", "Logica.Au.Mpire.FrameWork.Definitions.SysLists\Logica.Au.Mpire.FrameWork.Definitions.SysLists.csproj", "{54F157DB-7CA7-4D4C-A5AE-CFC1114F2FA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica.Au.Mpire.FrameWork.Definitions.Constants", "Logica.Au.Mpire.FrameWork.Definitions.Constants\Logica.Au.Mpire.FrameWork.Definitions.Constants.csproj", "{20260990-17CC-41F1-B0C8-E3D89CC0AEBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica.Au.Mpire.Framework.Diagnostics", "Logica.Au.Mpire.Framework.Diagnostics\Logica.Au.Mpire.Framework.Diagnostics.csproj", "{90A6B14B-05F1-440A-B90E-F2E9F878F10C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica.Au.Mpire.Framework.Diagnostics.Tests", "Logica.Au.Mpire.Framework.Diagnostics.Tests\Logica.Au.Mpire.Framework.Diagnostics.Tests.csproj", "{E98EF6BD-38DA-4ACD-A39E-E3901F731A74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica.Au.Mpire.Framework.Remoting", "Logica.Au.Mpire.Framework.Remoting\Logica.Au.Mpire.Framework.Remoting.csproj", "{7AFD0066-CD7A-4BFB-881B-3886BEF7C6FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica.Au.Mpire.Framework.Remoting.Tests", "Logica.Au.Mpire.Framework.Remoting.Tests\Logica.Au.Mpire.Framework.Remoting.Tests.csproj", "{8CCDA8B2-1F4F-4201-8259-BDA8A701236B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica.Au.Mpire.Framework.Security", "Logica.Au.Mpire.Framework.Security\Logica.Au.Mpire.Framework.Security.csproj", "{862AEF86-DA6F-4960-B3C3-A5AF59181E55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica.Au.Mpire.Framework.Security.Tests", "Logica.Au.Mpire.Framework.Security.Tests\Logica.Au.Mpire.Framework.Security.Tests.csproj", "{3F118B5D-B6E4-4610-B32A-50B39CC8FA08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica.Au.Mpire.Framework.Tests", "Logica.Au.Mpire.Framework.Tests\Logica.Au.Mpire.Framework.Tests.csproj", "{AAA648F7-F25C-4755-9DB3-F28A3AC5BEA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica.Au.Mpire.Framework.Utilities", "Logica.Au.Mpire.Framework.Utilities\Logica.Au.Mpire.Framework.Utilities.csproj", "{6AD0A29A-80BE-4645-B96C-C6A663EFAC55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica.Au.Mpire.Framework.Validation", "Logica.Au.Mpire.Framework.Validation\Logica.Au.Mpire.Framework.Validation.csproj", "{E0410045-E9A7-4C2E-B162-5C216DBFFC4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica.Au.Mpire.Framework.Validation.Tests", "Logica.Au.Mpire.Framework.Validation.Tests\Logica.Au.Mpire.Framework.Validation.Tests.csproj", "{6B32197D-BC9B-4C3B-9A0F-7F5CC896D4E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica.Au.Mpire.Framework.Configuration.Tests", "Logica.Au.Mpire.Framework.Configuration.Tests\Logica.Au.Mpire.Framework.Configuration.Tests.csproj", "{5C46FD62-ADAE-46C5-AEC0-31C86860C7B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica.Au.Mpire.Framework.Diagnostics.EventLogTraceListener", "Logica.Au.Mpire.Framework.Diagnostics.EventLogTraceListener\Logica.Au.Mpire.Framework.Diagnostics.EventLogTraceListener.csproj", "{28FD0F6F-7187-4799-8854-FA233EA5DB6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica.Au.MpireFramework.Utilities.Tests", "Logica.Au.MpireFramework.Utilities.Tests\Logica.Au.MpireFramework.Utilities.Tests.csproj", "{C12B5764-4ED2-45A9-B798-490BBC53BEC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica.Au.Mpire.Framework.Extensions", "Logica.Au.Mpire.Framework.Extensions\Logica.Au.Mpire.Framework.Extensions.csproj", "{1026A1BA-F30A-4AFC-8F20-77BEEEB76BCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		InteractiveDebug|Any CPU = InteractiveDebug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45A95A4A-5FA1-41B0-814C-B964E7EED65D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45A95A4A-5FA1-41B0-814C-B964E7EED65D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45A95A4A-5FA1-41B0-814C-B964E7EED65D}.InteractiveDebug|Any CPU.ActiveCfg = InteractiveDebug|Any CPU
+		{45A95A4A-5FA1-41B0-814C-B964E7EED65D}.InteractiveDebug|Any CPU.Build.0 = InteractiveDebug|Any CPU
+		{45A95A4A-5FA1-41B0-814C-B964E7EED65D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45A95A4A-5FA1-41B0-814C-B964E7EED65D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A7DBD1F-E35A-4DBE-A028-3F796951EFFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A7DBD1F-E35A-4DBE-A028-3F796951EFFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A7DBD1F-E35A-4DBE-A028-3F796951EFFC}.InteractiveDebug|Any CPU.ActiveCfg = InteractiveDebug|Any CPU
+		{0A7DBD1F-E35A-4DBE-A028-3F796951EFFC}.InteractiveDebug|Any CPU.Build.0 = InteractiveDebug|Any CPU
+		{0A7DBD1F-E35A-4DBE-A028-3F796951EFFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A7DBD1F-E35A-4DBE-A028-3F796951EFFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54F157DB-7CA7-4D4C-A5AE-CFC1114F2FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54F157DB-7CA7-4D4C-A5AE-CFC1114F2FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54F157DB-7CA7-4D4C-A5AE-CFC1114F2FA6}.InteractiveDebug|Any CPU.ActiveCfg = InteractiveDebug|Any CPU
+		{54F157DB-7CA7-4D4C-A5AE-CFC1114F2FA6}.InteractiveDebug|Any CPU.Build.0 = InteractiveDebug|Any CPU
+		{54F157DB-7CA7-4D4C-A5AE-CFC1114F2FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54F157DB-7CA7-4D4C-A5AE-CFC1114F2FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20260990-17CC-41F1-B0C8-E3D89CC0AEBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20260990-17CC-41F1-B0C8-E3D89CC0AEBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20260990-17CC-41F1-B0C8-E3D89CC0AEBA}.InteractiveDebug|Any CPU.ActiveCfg = InteractiveDebug|Any CPU
+		{20260990-17CC-41F1-B0C8-E3D89CC0AEBA}.InteractiveDebug|Any CPU.Build.0 = InteractiveDebug|Any CPU
+		{20260990-17CC-41F1-B0C8-E3D89CC0AEBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20260990-17CC-41F1-B0C8-E3D89CC0AEBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90A6B14B-05F1-440A-B90E-F2E9F878F10C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90A6B14B-05F1-440A-B90E-F2E9F878F10C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90A6B14B-05F1-440A-B90E-F2E9F878F10C}.InteractiveDebug|Any CPU.ActiveCfg = InteractiveDebug|Any CPU
+		{90A6B14B-05F1-440A-B90E-F2E9F878F10C}.InteractiveDebug|Any CPU.Build.0 = InteractiveDebug|Any CPU
+		{90A6B14B-05F1-440A-B90E-F2E9F878F10C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90A6B14B-05F1-440A-B90E-F2E9F878F10C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E98EF6BD-38DA-4ACD-A39E-E3901F731A74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E98EF6BD-38DA-4ACD-A39E-E3901F731A74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E98EF6BD-38DA-4ACD-A39E-E3901F731A74}.InteractiveDebug|Any CPU.ActiveCfg = InteractiveDebug|Any CPU
+		{E98EF6BD-38DA-4ACD-A39E-E3901F731A74}.InteractiveDebug|Any CPU.Build.0 = InteractiveDebug|Any CPU
+		{E98EF6BD-38DA-4ACD-A39E-E3901F731A74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E98EF6BD-38DA-4ACD-A39E-E3901F731A74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AFD0066-CD7A-4BFB-881B-3886BEF7C6FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AFD0066-CD7A-4BFB-881B-3886BEF7C6FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AFD0066-CD7A-4BFB-881B-3886BEF7C6FB}.InteractiveDebug|Any CPU.ActiveCfg = InteractiveDebug|Any CPU
+		{7AFD0066-CD7A-4BFB-881B-3886BEF7C6FB}.InteractiveDebug|Any CPU.Build.0 = InteractiveDebug|Any CPU
+		{7AFD0066-CD7A-4BFB-881B-3886BEF7C6FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AFD0066-CD7A-4BFB-881B-3886BEF7C6FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CCDA8B2-1F4F-4201-8259-BDA8A701236B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CCDA8B2-1F4F-4201-8259-BDA8A701236B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CCDA8B2-1F4F-4201-8259-BDA8A701236B}.InteractiveDebug|Any CPU.ActiveCfg = InteractiveDebug|Any CPU
+		{8CCDA8B2-1F4F-4201-8259-BDA8A701236B}.InteractiveDebug|Any CPU.Build.0 = InteractiveDebug|Any CPU
+		{8CCDA8B2-1F4F-4201-8259-BDA8A701236B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CCDA8B2-1F4F-4201-8259-BDA8A701236B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{862AEF86-DA6F-4960-B3C3-A5AF59181E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{862AEF86-DA6F-4960-B3C3-A5AF59181E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{862AEF86-DA6F-4960-B3C3-A5AF59181E55}.InteractiveDebug|Any CPU.ActiveCfg = InteractiveDebug|Any CPU
+		{862AEF86-DA6F-4960-B3C3-A5AF59181E55}.InteractiveDebug|Any CPU.Build.0 = InteractiveDebug|Any CPU
+		{862AEF86-DA6F-4960-B3C3-A5AF59181E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{862AEF86-DA6F-4960-B3C3-A5AF59181E55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F118B5D-B6E4-4610-B32A-50B39CC8FA08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F118B5D-B6E4-4610-B32A-50B39CC8FA08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F118B5D-B6E4-4610-B32A-50B39CC8FA08}.InteractiveDebug|Any CPU.ActiveCfg = InteractiveDebug|Any CPU
+		{3F118B5D-B6E4-4610-B32A-50B39CC8FA08}.InteractiveDebug|Any CPU.Build.0 = InteractiveDebug|Any CPU
+		{3F118B5D-B6E4-4610-B32A-50B39CC8FA08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F118B5D-B6E4-4610-B32A-50B39CC8FA08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAA648F7-F25C-4755-9DB3-F28A3AC5BEA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAA648F7-F25C-4755-9DB3-F28A3AC5BEA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAA648F7-F25C-4755-9DB3-F28A3AC5BEA9}.InteractiveDebug|Any CPU.ActiveCfg = InteractiveDebug|Any CPU
+		{AAA648F7-F25C-4755-9DB3-F28A3AC5BEA9}.InteractiveDebug|Any CPU.Build.0 = InteractiveDebug|Any CPU
+		{AAA648F7-F25C-4755-9DB3-F28A3AC5BEA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAA648F7-F25C-4755-9DB3-F28A3AC5BEA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AD0A29A-80BE-4645-B96C-C6A663EFAC55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AD0A29A-80BE-4645-B96C-C6A663EFAC55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AD0A29A-80BE-4645-B96C-C6A663EFAC55}.InteractiveDebug|Any CPU.ActiveCfg = InteractiveDebug|Any CPU
+		{6AD0A29A-80BE-4645-B96C-C6A663EFAC55}.InteractiveDebug|Any CPU.Build.0 = InteractiveDebug|Any CPU
+		{6AD0A29A-80BE-4645-B96C-C6A663EFAC55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AD0A29A-80BE-4645-B96C-C6A663EFAC55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0410045-E9A7-4C2E-B162-5C216DBFFC4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0410045-E9A7-4C2E-B162-5C216DBFFC4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0410045-E9A7-4C2E-B162-5C216DBFFC4E}.InteractiveDebug|Any CPU.ActiveCfg = InteractiveDebug|Any CPU
+		{E0410045-E9A7-4C2E-B162-5C216DBFFC4E}.InteractiveDebug|Any CPU.Build.0 = InteractiveDebug|Any CPU
+		{E0410045-E9A7-4C2E-B162-5C216DBFFC4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0410045-E9A7-4C2E-B162-5C216DBFFC4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B32197D-BC9B-4C3B-9A0F-7F5CC896D4E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B32197D-BC9B-4C3B-9A0F-7F5CC896D4E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B32197D-BC9B-4C3B-9A0F-7F5CC896D4E6}.InteractiveDebug|Any CPU.ActiveCfg = InteractiveDebug|Any CPU
+		{6B32197D-BC9B-4C3B-9A0F-7F5CC896D4E6}.InteractiveDebug|Any CPU.Build.0 = InteractiveDebug|Any CPU
+		{6B32197D-BC9B-4C3B-9A0F-7F5CC896D4E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B32197D-BC9B-4C3B-9A0F-7F5CC896D4E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C46FD62-ADAE-46C5-AEC0-31C86860C7B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C46FD62-ADAE-46C5-AEC0-31C86860C7B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C46FD62-ADAE-46C5-AEC0-31C86860C7B2}.InteractiveDebug|Any CPU.ActiveCfg = InteractiveDebug|Any CPU
+		{5C46FD62-ADAE-46C5-AEC0-31C86860C7B2}.InteractiveDebug|Any CPU.Build.0 = InteractiveDebug|Any CPU
+		{5C46FD62-ADAE-46C5-AEC0-31C86860C7B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C46FD62-ADAE-46C5-AEC0-31C86860C7B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28FD0F6F-7187-4799-8854-FA233EA5DB6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28FD0F6F-7187-4799-8854-FA233EA5DB6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28FD0F6F-7187-4799-8854-FA233EA5DB6F}.InteractiveDebug|Any CPU.ActiveCfg = InteractiveDebug|Any CPU
+		{28FD0F6F-7187-4799-8854-FA233EA5DB6F}.InteractiveDebug|Any CPU.Build.0 = InteractiveDebug|Any CPU
+		{28FD0F6F-7187-4799-8854-FA233EA5DB6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28FD0F6F-7187-4799-8854-FA233EA5DB6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C12B5764-4ED2-45A9-B798-490BBC53BEC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C12B5764-4ED2-45A9-B798-490BBC53BEC5}.InteractiveDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C12B5764-4ED2-45A9-B798-490BBC53BEC5}.InteractiveDebug|Any CPU.Build.0 = Debug|Any CPU
+		{C12B5764-4ED2-45A9-B798-490BBC53BEC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1026A1BA-F30A-4AFC-8F20-77BEEEB76BCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1026A1BA-F30A-4AFC-8F20-77BEEEB76BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1026A1BA-F30A-4AFC-8F20-77BEEEB76BCD}.InteractiveDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1026A1BA-F30A-4AFC-8F20-77BEEEB76BCD}.InteractiveDebug|Any CPU.Build.0 = Debug|Any CPU
+		{1026A1BA-F30A-4AFC-8F20-77BEEEB76BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1026A1BA-F30A-4AFC-8F20-77BEEEB76BCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 19
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://phomstf03:8080/tfs/sewcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Logica.Au.Mpire.Framework.Configuration\\Logica.Au.Mpire.Framework.Configuration.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = Logica.Au.Mpire.Framework.Configuration\\
+		SccProjectUniqueName2 = Logica.Au.Mpire.FrameWork.Definitions.Constants\\Logica.Au.Mpire.FrameWork.Definitions.Constants.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = Logica.Au.Mpire.FrameWork.Definitions.Constants\\
+		SccProjectUniqueName3 = Logica.Au.Mpire.FrameWork.Definitions.SysLists\\Logica.Au.Mpire.FrameWork.Definitions.SysLists.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = Logica.Au.Mpire.FrameWork.Definitions.SysLists\\
+		SccProjectUniqueName4 = Logica.Au.Mpire.Framework.Diagnostics.Tests\\Logica.Au.Mpire.Framework.Diagnostics.Tests.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = Logica.Au.Mpire.Framework.Diagnostics.Tests\\
+		SccProjectUniqueName5 = Logica.Au.Mpire.Framework.Diagnostics\\Logica.Au.Mpire.Framework.Diagnostics.csproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = Logica.Au.Mpire.Framework.Diagnostics\\
+		SccProjectUniqueName6 = Logica.Au.Mpire.Framework.Remoting.Tests\\Logica.Au.Mpire.Framework.Remoting.Tests.csproj
+		SccLocalPath6 = .
+		SccProjectFilePathRelativizedFromConnection6 = Logica.Au.Mpire.Framework.Remoting.Tests\\
+		SccProjectUniqueName7 = Logica.Au.Mpire.Framework.Remoting\\Logica.Au.Mpire.Framework.Remoting.csproj
+		SccLocalPath7 = .
+		SccProjectFilePathRelativizedFromConnection7 = Logica.Au.Mpire.Framework.Remoting\\
+		SccProjectUniqueName8 = Logica.Au.Mpire.Framework.Security.Tests\\Logica.Au.Mpire.Framework.Security.Tests.csproj
+		SccLocalPath8 = .
+		SccProjectFilePathRelativizedFromConnection8 = Logica.Au.Mpire.Framework.Security.Tests\\
+		SccProjectUniqueName9 = Logica.Au.Mpire.Framework.Security\\Logica.Au.Mpire.Framework.Security.csproj
+		SccLocalPath9 = .
+		SccProjectFilePathRelativizedFromConnection9 = Logica.Au.Mpire.Framework.Security\\
+		SccProjectUniqueName10 = Logica.Au.Mpire.Framework.Tests\\Logica.Au.Mpire.Framework.Tests.csproj
+		SccLocalPath10 = .
+		SccProjectFilePathRelativizedFromConnection10 = Logica.Au.Mpire.Framework.Tests\\
+		SccProjectUniqueName11 = Logica.Au.Mpire.Framework.Utilities\\Logica.Au.Mpire.Framework.Utilities.csproj
+		SccLocalPath11 = .
+		SccProjectFilePathRelativizedFromConnection11 = Logica.Au.Mpire.Framework.Utilities\\
+		SccProjectUniqueName12 = Logica.Au.Mpire.Framework.Validation.Tests\\Logica.Au.Mpire.Framework.Validation.Tests.csproj
+		SccLocalPath12 = .
+		SccProjectFilePathRelativizedFromConnection12 = Logica.Au.Mpire.Framework.Validation.Tests\\
+		SccProjectUniqueName13 = Logica.Au.Mpire.Framework.Validation\\Logica.Au.Mpire.Framework.Validation.csproj
+		SccLocalPath13 = .
+		SccProjectFilePathRelativizedFromConnection13 = Logica.Au.Mpire.Framework.Validation\\
+		SccProjectUniqueName14 = Logica.Au.Mpire.Framework\\Logica.Au.Mpire.Framework.csproj
+		SccLocalPath14 = .
+		SccProjectFilePathRelativizedFromConnection14 = Logica.Au.Mpire.Framework\\
+		SccProjectUniqueName15 = Logica.Au.Mpire.Framework.Configuration.Tests\\Logica.Au.Mpire.Framework.Configuration.Tests.csproj
+		SccLocalPath15 = .
+		SccProjectFilePathRelativizedFromConnection15 = Logica.Au.Mpire.Framework.Configuration.Tests\\
+		SccProjectUniqueName16 = Logica.Au.Mpire.Framework.Diagnostics.EventLogTraceListener\\Logica.Au.Mpire.Framework.Diagnostics.EventLogTraceListener.csproj
+		SccLocalPath16 = .
+		SccProjectFilePathRelativizedFromConnection16 = Logica.Au.Mpire.Framework.Diagnostics.EventLogTraceListener\\
+		SccProjectUniqueName17 = Logica.Au.MpireFramework.Utilities.Tests\\Logica.Au.MpireFramework.Utilities.Tests.csproj
+		SccLocalPath17 = .
+		SccProjectFilePathRelativizedFromConnection17 = Logica.Au.MpireFramework.Utilities.Tests\\
+		SccProjectUniqueName18 = Logica.Au.Mpire.Framework.Extensions\\Logica.Au.Mpire.Framework.Extensions.csproj
+		SccProjectName18 = Logica.Au.Mpire.Framework.Extensions
+		SccLocalPath18 = Logica.Au.Mpire.Framework.Extensions
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Framework.vsmdi
+	EndGlobalSection
+EndGlobal
