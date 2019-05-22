@@ -71,5 +71,26 @@ namespace ICE.Platform.Core
                 }
             }
         }
+
+        public static Type GetEntityForName(string name)
+        {
+            foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies())
+            {
+                foreach (Type type in assembly.GetTypes())
+                {
+                    if (type.IsAbstract) continue;
+
+                    foreach (var _interface in type.GetInterfaces())
+                    {
+                        if (_interface.Equals(typeof(IPlatformEntity)) && type.Name.ToUpper() == name.ToUpper())
+                        {
+                            return type;
+                        }
+                    }
+                }
+            }
+
+            return null;
+        }
     }
 }
