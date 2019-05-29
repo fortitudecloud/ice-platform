@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Reflection;
 
 namespace ICE.Platform.Rest
 {
@@ -48,9 +49,16 @@ namespace ICE.Platform.Rest
             return (IPlatformSet<E>)this.contextCache[typeof(E)];
         }
 
+        public T Set<T>(Type entityType)
+        {
+            MethodInfo setInfo = this.GetType().GetMethod("Set", new Type[] { });
+            MethodInfo setGenericInfo = setInfo.MakeGenericMethod(entityType);
+            return (T)setGenericInfo.Invoke(this, null);
+        }
+
         public IPlatformDataProvider GetProvider()
         {
             return this.provider;
-        }
+        }        
     }
 }

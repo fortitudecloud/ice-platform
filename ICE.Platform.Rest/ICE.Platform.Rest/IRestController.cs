@@ -9,8 +9,10 @@ namespace ICE.Platform.Rest
 
     public interface IRestController
     {
-        IPlatformContext Context { get; set; }
+        IPlatformContext Context { get; set; }        
 
-        Type Entity { get; }
+        IGenericPlatformSet Set { get; }
+
+        Type Entity { get; }        
     }
 }

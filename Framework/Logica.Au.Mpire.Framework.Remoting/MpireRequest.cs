@@ -35,12 +35,58 @@ namespace Logica.Au.Mpire.Framework.Remoting
 
 		}
 
-        // TODO: Add GetResponse override to accept security principle claims before they go to the server. Will throw SecurityException 
-        protected void GetResponse<R, I>(string configurationName, Action<I> requestExecuter, Action<R> errorResponse) where R : MpireResponse where I : class, new()
+        /// <summary>
+        /// Gets a response from the remote endpoint. Handles cross cutting concerns
+        /// </summary>
+        /// <typeparam name="R">Response object to return</typeparam>
+        /// <typeparam name="I">Endpoint proxy object to consume</typeparam>
+        /// <param name="configurationName">Request configuration name</param>
+        /// <param name="requestExecuter">Remoting callout implementation</param>
+        /// <param name="securityDemand"></param>
+        /// <returns>Typed Response Object</returns>
+        protected R GetResponse<R, I>(string configurationName, Action<I> requestExecuter, string[] securityDemand) where R : MpireResponse where I : class, new()
+        {
+            // If the security demand is not satisfied, throw a SecurityException to the client caller
+
+            bool secure = false, demands = securityDemand != null && securityDemand.Length > 0;
+
+            if(demands)
+            {
+                foreach(var demand in securityDemand)
+                {
+                    if(System.Threading.Thread.CurrentPrincipal.IsInRole(demand))
+                    {
+                        secure = true;
+                    }
+                }
+
+                if(!secure)
+                {
+                    var response = (R)Activator.CreateInstance(typeof(R));
+
+                    CreateSecurityExceptionResponse(response, "Failed pre-flight check");
+
+                    return response;
+                }
+            }
+
+            return GetResponse<R, I>(configurationName, requestExecuter);
+        }
+        
+        /// <summary>
+        /// Gets a response from the remote endpoint. Handles cross cutting concerns
+        /// </summary>
+        /// <typeparam name="R">Response object to return</typeparam>
+        /// <typeparam name="I">Endpoint proxy object to consume</typeparam>
+        /// <param name="configurationName">Request configuration name</param>
+        /// <param name="requestExecuter">Remoting callout implementation</param>
+        /// <returns>Typed Response Object</returns>
+        protected R GetResponse<R, I>(string configurationName, Action<I> requestExecuter) where R : MpireResponse where I : class, new()
         {
             string serverUrl = null;
             MpireRequestConfiguration configuration = null;
-            I proxy = null;            
+            I proxy = null;
+            var response = (R)Activator.CreateInstance(typeof(R));
 
             try
             {
@@ -58,36 +104,54 @@ namespace Logica.Au.Mpire.Framework.Remoting
                     serverUrl);
                 }                
 
-                requestExecuter(proxy);                
+                requestExecuter(proxy);
+
+                response.Result = RequestResult.Success;                
             }
             catch (ConfigurationException ex)
             {
                 // Log the exception
                 System.Diagnostics.Debug.WriteLine(configurationName + ".GetResponse : Failed to retrieve configuration information." + ex.Message);
 
-                // Return a valid Response (with a Failure Result)
-                var response = (R)Activator.CreateInstance(typeof(R));
-                response.Result = RequestResult.Failure;
-                response.Errors.Add("Exception occured while obtaining Remoting configuration : " + ex.Message);
+                CreateConfigurationExceptionResponse(response, ex.Message);
             }
             catch (SecurityException ex)
             {
-                // Return a valid Response (with a Failure Result)
-                var response = (R)Activator.CreateInstance(typeof(R));
-                response.Result = RequestResult.Failure;
-                response.Errors.Add("User does not have Security Permissions to requested Processor : " + ex.Message);
+                CreateSecurityExceptionResponse(response, ex.Message);
             }
             catch (Exception ex)
             {
                 //Log the exception
                 System.Diagnostics.Debug.WriteLine(configurationName + ".GetResponse : Failed to get Response: " + ex.Message);
 
-                // Return a valid Response (with a Failure Result)
-                var response = (R)Activator.CreateInstance(typeof(R));
-                response.Result = RequestResult.Failure;
-                response.Errors.Add("Exception occured while retrieving remote proxy reference : " + ex.ToString());
+                CreateGeneralExceptionResponse(response, ex.ToString());
             }
+
+            return response;
         }
+
+        #region Response helpers
+        private void CreateConfigurationExceptionResponse<R>(R response, string message) where R : MpireResponse
+        {
+            // Return a valid Response (with a Failure Result)                
+            response.Result = RequestResult.Failure;
+            response.Errors.Add("Exception occured while obtaining Remoting configuration : " + message);
+        }
+
+        private void CreateSecurityExceptionResponse<R>(R response, string message) where R : MpireResponse
+        {
+            // Return a valid Response (with a Failure Result)                
+            response.Result = RequestResult.Failure;
+            response.Errors.Add("User does not have Security Permissions to requested Processor : " + message);
+        }
+
+        private void CreateGeneralExceptionResponse<R>(R response, string message) where R : MpireResponse
+        {
+            // Return a valid Response (with a Failure Result)                
+            response.Result = RequestResult.Failure;
+            response.Errors.Add("Exception occured while retrieving remote proxy reference : " + message);
+        }
+        #endregion
 
     }
 

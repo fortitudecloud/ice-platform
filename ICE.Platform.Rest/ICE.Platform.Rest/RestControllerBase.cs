@@ -8,7 +8,7 @@ namespace ICE.Platform.Rest
 {
     using ICE.Platform.Core;
 
-    [Route("api/rest/[controller]")]
+    [Route("api/old/[controller]")]
     [ApiController]
     public abstract class RestControllerBase<E> : ControllerBase, IRestController where E : IPlatformEntity
     {
@@ -17,6 +17,8 @@ namespace ICE.Platform.Rest
         public IPlatformContext Context { get; set; }
 
         public Type Entity => typeof(E);
+
+        IGenericPlatformSet IRestController.Set { get => throw new NotImplementedException(); }
 
         public RestControllerBase(IPlatformContext context)
         {

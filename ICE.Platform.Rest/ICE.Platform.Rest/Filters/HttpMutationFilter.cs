@@ -14,10 +14,10 @@ namespace ICE.Platform.Rest.Filters
     {
         public override void OnResultExecuting(ResultExecutingContext context)
         {
-            if(context.Controller.GetType().IsAssignableFrom(typeof(IRestController)))
-            {
-                var restController = ((IRestController)context.Controller);
+            var restController = context.Controller as IRestController;
 
+            if (restController != null)
+            {
                 var mutations = Platform.GetMutationList(restController.Entity, MutationType.HttpResponse);
 
                 if(mutations.Count() > 0 && context.Result.GetType() == typeof(ObjectResult))

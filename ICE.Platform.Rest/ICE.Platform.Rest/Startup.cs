@@ -32,7 +32,8 @@ namespace ICE.Platform.Rest
 
             // ICE Platform services
 
-            //services.AddTransient<IPlatformDAL, MockDAL>();
+            services.AddTransient<IPlatformDataProvider, PlatformEntityMockProvider>();
+
             services.AddTransient<IPlatformContext, PlatformContext>();
 
             foreach (var injectable in Platform.GetInjectableMap())

@@ -7,10 +7,10 @@ namespace ICE.Platform.Rest
 {
     using Core;
 
-    public class PlatformSet<E> : IPlatformSet<E> where E : IPlatformEntity
+    public class PlatformSet<E> : IPlatformSet<E>, IGenericPlatformSet where E : IPlatformEntity
     {
         IPlatformContext context;
-        IPlatformTrigger<E> trigger;
+        IPlatformTrigger<E> trigger;        
 
         public PlatformSet(IPlatformContext context)
         {
@@ -32,5 +32,14 @@ namespace ICE.Platform.Rest
         {
             return context.GetProvider().Read<E>(entityId);
         }
+
+        #region Generic method wrappers
+        async Task<dynamic> IGenericPlatformSet.Read(string entityId)
+        {
+            var resultTask = await this.Read(entityId);
+
+            return resultTask;
+        }
+        #endregion
     }
 }
