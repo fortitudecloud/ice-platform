@@ -4,6 +4,9 @@ using System.Text;
 
 namespace ICE.Platform.Core
 {
+    /// <summary>
+    /// Platform event object. Used to publish events to the ESB (event service bus)
+    /// </summary>
     public interface IPlatformEvent : IPlatformEntity
     {
         /// <summary>

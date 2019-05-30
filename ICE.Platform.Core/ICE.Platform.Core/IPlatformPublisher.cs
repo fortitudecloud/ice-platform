@@ -10,6 +10,11 @@ namespace ICE.Platform.Core
     /// </summary>
     public interface IPlatformPublisher<T>
     {
+        /// <summary>
+        /// Publishes the generic object to a designated subscriber source
+        /// </summary>
+        /// <param name="message"></param>
+        /// <returns></returns>
         Task Publish(T message);
     }
 }
