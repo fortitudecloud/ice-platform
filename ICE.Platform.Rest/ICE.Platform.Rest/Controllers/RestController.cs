@@ -32,6 +32,6 @@ namespace ICE.Platform.Rest.Controllers
             if (((IEnumerable<object>)result).Count() == 0) return NotFound();
 
             return new ObjectResult(((IEnumerable<object>)result).FirstOrDefault());
-        }                
+        }        
     }
 }
