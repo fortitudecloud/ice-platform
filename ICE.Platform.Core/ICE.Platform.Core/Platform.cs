@@ -92,5 +92,21 @@ namespace ICE.Platform.Core
 
             return null;
         }
+
+        public static IEnumerable<Type> GetResourceList()
+        {
+            foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies())
+            {
+                foreach (Type type in assembly.GetTypes())
+                {
+                    if (type.IsAbstract) continue;
+
+                    if (type.GetCustomAttributes(typeof(ResourceAttribute), true).Length > 0)
+                    {
+                        yield return type;
+                    }
+                }
+            }
+        }
     }
 }

@@ -40,6 +40,13 @@ namespace ICE.Platform.Rest
             {
                 services.AddTransient(injectable.Item1, injectable.Item2);
             }
+
+            foreach(var resource in Platform.GetResourceList())
+            {
+                services.AddTransient(resource, resource);
+            }
+
+            services.AddSingleton(typeof(IPlatformResourceFactory), typeof(PlatformResourceFactory));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -7,24 +7,52 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ICE.Platform.Rest.Controllers
 {
+    using Core;
+
     [Route("api/resource/{*url}")]
     [ApiController]
     public class ResourceController : ControllerBase
     {
-        [HttpGet]
-        public ActionResult Get(string id)
+        private IPlatformResourceFactory factory;
+
+        private string UrlParam
         {
-            // TODO: perform regex match on the "url" RouteData value to the 
-            // routes defined on the custom resources to determine the correct method to call
-
-            // e.g. regex
-            // url: 'dog/123'
-            // regex: '\w+/\w+'
-
-            return new ObjectResult(new
+            get
             {
-                status = 200
-            });
+                return this.RouteData.Values.Values.Select(v => v.ToString()).ToArray()[0];
+            }
         }
+
+        private string ResourceName
+        {
+            get
+            {                
+                return this.UrlParam.Substring(0, this.UrlParam.IndexOf(@"/"));
+            }
+        }
+
+        private string RouteParam
+        {
+            get
+            {
+                return this.UrlParam.Substring(this.UrlParam.IndexOf(@"/") + 1);
+            }
+        }
+
+        public ResourceController(IPlatformResourceFactory factory) => this.factory = factory;
+
+        [HttpGet]
+        public ActionResult Get()
+        {
+            var resource = factory.Get(this.ResourceName);
+
+            if (resource == null) return new StatusCodeResult(404);
+
+            var routeTask = factory.GetRouteResult(resource, this.RouteParam, Core.Structs.HttpMethod.GET);
+
+            if (routeTask == null) return new StatusCodeResult(404);            
+
+            return new ObjectResult(routeTask.Result);
+        }        
     }
 }

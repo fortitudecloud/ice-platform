@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Resources\" />
     <Folder Include="Triggers\" />
   </ItemGroup>
 

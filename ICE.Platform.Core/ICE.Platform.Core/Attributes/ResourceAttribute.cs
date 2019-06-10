@@ -4,10 +4,11 @@ using System.Text;
 
 namespace ICE.Platform.Core.Attributes
 {
+    [AttributeUsage(AttributeTargets.Class)]
     public class ResourceAttribute : Attribute
     {
-        public string Url { get; set; }
+        public string Name { get; set; }
 
-        public ResourceAttribute(string url) => this.Url = url;
+        public ResourceAttribute(string name) => this.Name = name;
     }
 }
