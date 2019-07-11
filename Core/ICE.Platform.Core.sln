@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICE.Platform.Core", "ICE.Platform.Core\ICE.Platform.Core.csproj", "{9F931139-D3E2-47A3-B2C1-D28EF4692F34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F931139-D3E2-47A3-B2C1-D28EF4692F34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F931139-D3E2-47A3-B2C1-D28EF4692F34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F931139-D3E2-47A3-B2C1-D28EF4692F34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F931139-D3E2-47A3-B2C1-D28EF4692F34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3227DCF3-F3FF-46B0-8F1F-1EC06429722F}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://phomstf01:8080/tfs/sewcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ICE.Platform.Core\\ICE.Platform.Core.csproj
+		SccProjectName1 = ICE.Platform.Core
+		SccLocalPath1 = ICE.Platform.Core
+	EndGlobalSection
+EndGlobal
